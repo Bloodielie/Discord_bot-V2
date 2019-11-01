@@ -53,5 +53,5 @@ class Jojobot(commands.Bot):
 
 
 if __name__ == "__main__":
-	bot = Jojobot(command_prefix=config.prefix,case_insensitive=True)
-	bot.run(config.token_bot)
+    tokenrs = os.environ.get('BOT_TOKEN')
+    bot = Jojobot(command_prefix=config.prefix,case_insensitive=True).run(str(tokenrs))
