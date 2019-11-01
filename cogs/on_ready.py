@@ -25,7 +25,7 @@ class On_ready(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-     async def check_vk(self):
+    async def check_vk(self):
         try:
             while True:
                 while not self.is_closed():
