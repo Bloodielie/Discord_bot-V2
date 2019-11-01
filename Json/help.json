@@ -1,0 +1,74 @@
+{
+	"mute": {
+		"title": "Описание команды mute",
+		"description": "Команда !mute `@member` `time` `reason`\nМутит человека на определённое время"
+	},
+	"unmute": {
+		"title": "Описание команды unmute",
+		"description": "Команда !unmute `@member`\nРазмучивает человека"
+	},
+	"ban": {
+		"title": "Описание команды ban",
+		"description": "Команда !ban `@member` `time` `reason`\nБанит человека на определённое время"
+	},
+	"clear": {
+		"title": "Описание команды clear",
+		"description": "Команда !clear `amount`\nЧистит чат"
+	},
+	"F": {
+		"title": "Описание команды F",
+		"description": "Команда !F `@member`\nВыражает уважение"
+	},
+	"coin": {
+		"title": "Описание команды coin",
+		"description": "!coin\nПодбросить монетку"
+	},
+	"roll": {
+		"title": "Описание команды roll",
+		"description": "!roll first-second\nРоллит(Диапазон от first до second)"
+	},
+	"say": {
+		"title": "Описание команды say",
+		"description": "!say `text`\nБот пишет ваше сообщение от своего имени"
+	},
+	"esay": {
+		"title": "Описание команды esay",
+		"description": "!esay `text`\nБот пишет ваше сообщение от своего имени(в колонке)"
+	},
+	"report": {
+		"title": "Описание команды report",
+		"description": "!report `@member` `reason`\nОтправляет репорт на игрока"
+	},
+	"weather": {
+		"title": "Описание команды weather",
+		"description": "!weather `city`\nПогода в вашем городе"
+	},
+	"picture": {
+		"title": "Описание команды picture",
+		"description": "!picture `category`\nОтправляет картинку из выбранной категории**\n(cat,niga,anime_t9n,content,wallpaper,hentai,4len)**\n`cat` и `niga` можно использовать в любых чатах\n`anime_t9n` `content` `wallpaper` `hentai` `4len`можно использовать только в NSFW"
+	},
+	"create_role": {
+		"title": "Описание команды create_role",
+		"description": "!create_role `permissions` `name`\nСоздает роль!"
+	},
+	"move": {
+		"title": "Описание команды move",
+		"description": "!move `channel-1` `channel-2`\nПеремещает всех участников с одного канала в другой!(Каналы указывать в `ID`)"
+	},
+	"role": {
+		"title": "Описание команды role",
+		"description": "!role `action` `@member` `name_role`\nВыдает/забирает роль у человека!\naction:add даёт роль,remove забирает роль"
+	},
+	"help": {
+		"title": "Список команд",
+		"description": "Используйте `!` перед началом команды\n**Общее**\n`help`,`weather`\n**Развлечение**\n`picture`,`F`,`coin`,`roll`\n**Модерация**\n`report`,`mute`,`unmute`,`ban`,`create_role`,`role`,`move`\n**Другое**\n`say`,`esay`,`clear`"
+	},
+	"info_dota": {
+		"title": "Описание команды info_dota",
+		"description": "!info_dota `id`\nИнформация о профиле"
+	},
+	"last_matches": {
+		"title": "Описание команды last_matches",
+		"description": "!last_matches `id`\nИнформация о последнем матче"
+	}
+}
