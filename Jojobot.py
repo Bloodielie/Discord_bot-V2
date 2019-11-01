@@ -1,5 +1,5 @@
 from discord.ext import commands
-import discord, config, asyncio, datetime
+import discord, config, asyncio, datetime, os
 from cogs.Utils import utils
 
 class Jojobot(commands.Bot):
