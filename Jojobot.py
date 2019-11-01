@@ -16,7 +16,6 @@ class Jojobot(commands.Bot):
           'cogs.moderation',
           'cogs.events',
           'cogs.other',
-          'cogs.dota',
           'cogs.on_ready'
         )
         print(f'|Cogs/INFO|     |Cogs/NAME|     |Cogs/ERROR|')
