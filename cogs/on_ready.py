@@ -7,9 +7,19 @@ from mysql.connector import Error
 
 login = os.environ.get('login')
 password_vk = os.environ.get('password_vk')
+host = os.environ.get('host')
+database = os.environ.get('database')
+user = os.environ.get('user')
+password = os.environ.get('password')
 
 vk = vk_api.VkApi(login = login, password = password_vk)
 vk.auth()
+
+conn = mysql.connector.connect(host=host,
+                   database=database,
+                   user=user,
+                   password=password)
+cursor = conn.cursor()
 
 class On_ready(commands.Cog):
     def __init__(self, bot):
@@ -19,7 +29,7 @@ class On_ready(commands.Cog):
         id1 = 0
         while True:
             while not self.bot.is_closed():
-                await asyncio.sleep(5)
+                await asyncio.sleep(60)
                 newsfeed = vk.method("newsfeed.get", {"count": 1,"source_ids": -182028902})
 
                 if newsfeed['items'][0]['post_id'] == id1:
