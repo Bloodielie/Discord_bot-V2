@@ -1,0 +1,10 @@
+discord.py
+asyncio
+aiohttp
+websockets
+chardet
+pyowm
+https://github.com/Nekos-life/nekos.py/archive/master.zip
+vk_api
+pip
+mysql-connector-python
