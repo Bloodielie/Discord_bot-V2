@@ -1,8 +1,5 @@
 #BOTS
-login_vk = '+375336718846'
-password_vk = 'Kik0kik1235'
-token_bot = 'NjE2MTk5MzQ1ODg0MTAyNjY3.XYtqwQ.eUmRRui7L_ZKY3iqHPWZvjDcTW0'
-prefix = "1"
+prefix = "!"
 
 #Channel
 error_chanel = 605409615785754627
