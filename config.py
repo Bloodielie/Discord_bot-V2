@@ -2,8 +2,8 @@
 prefix = "!"
 
 #Channel
-error_chanel = 605409615785754627
-server_channel = 605409615785754627
+error_chanel = 638791043038314526
+server_channel = 605711941742362660
 voice_log_channel = 611631555730735114
 voice_check = 612006540043485238
 
