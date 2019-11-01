@@ -28,7 +28,7 @@ class On_ready(commands.Cog):
     async def check_vk(self):
         try:
             while True:
-                while not self.is_closed():
+                while not self.bot.is_closed():
                     await asyncio.sleep(60)
                     newsfeed = vk.method("newsfeed.get", {"count": 1,"source_ids": -153688326})
 
