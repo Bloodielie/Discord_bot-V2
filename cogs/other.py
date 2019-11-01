@@ -23,7 +23,7 @@ class Other(commands.Cog):
 	@commands.command(aliases= ["помощь"])
 	async def help(self, ctx, command = None):
 		if not command:
-			helpown = discord.Embed(title = "Список команд", description='Используйте `!` перед началом команды\n**Общее**\n`help`,`weather`\n**Развлечение**\n`picture`,`F`,`coin`,`roll`\n**Модерация**\n`report`,`mute`,`unmute`,`ban`,`create_role`,`role`,`move`\n**Другое**\n`say`,`esay`,`clear`\n**Dota2**\n`info_dota`,`last_matches`', colour=0x39d0d6)
+			helpown = discord.Embed(title = "Список команд", description='Используйте `!` перед началом команды\n**Общее**\n`help`,`weather`\n**Развлечение**\n`picture`,`F`,`coin`,`roll`\n**Модерация**\n`report`,`mute`,`unmute`,`ban`,`create_role`,`role`,`move`\n**Другое**\n`say`,`esay`,`clear`', colour=0x39d0d6)
 			helpown.set_footer(text ='Вы можете ввести help для команды и получить доп. информацию')
 			await ctx.send(embed = helpown, delete_after=30)
 		else:
