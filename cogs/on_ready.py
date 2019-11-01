@@ -1,8 +1,14 @@
 import discord, config, asyncio, datetime, vk_api
 from discord.ext import commands
 from cogs.Utils.vk_post import Vkcheck
+import os
+import mysql.connector
+from mysql.connector import Error
 
-vk = vk_api.VkApi(login = config.login_vk, password = config.password_vk)
+login = os.environ.get('login')
+password_vk = os.environ.get('password_vk')
+
+vk = vk_api.VkApi(login = login, password = password_vk)
 vk.auth()
 
 class On_ready(commands.Cog):
