@@ -42,7 +42,7 @@ class On_ready(commands.Cog):
                     else:
                         cursor.execute("UPDATE vk_check SET post_id = {}".format(post_id))
                         conn.commit()
-                        channel = self.get_channel(633327991136452646)
+                        channel = self.bot.get_channel(633327991136452646)
 
                     text = newsfeed['items'][0]['text']
                     group_icon_url = newsfeed['groups'][0]['photo_100']
