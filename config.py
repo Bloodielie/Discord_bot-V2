@@ -1,4 +1,5 @@
 #BOTS
+token_bot = ''
 prefix = "!"
 
 #Channel
