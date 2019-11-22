@@ -16,7 +16,7 @@ class Jojobot(commands.Bot):
           'cogs.moderation',
           'cogs.events',
           'cogs.other',
-          'cogs.on_ready'
+          'cogs.monitoring'
         )
         print(f'|Cogs/INFO|     |Cogs/NAME|     |Cogs/ERROR|')
         for i in modules:
@@ -35,6 +35,13 @@ class Jojobot(commands.Bot):
 
     async def on_connect(self):
         print('[Socket/CONNECT]       <Socket Connected>\n')
+
+    async def on_ready(self):
+        print('[Discord/INFO]         <Jojobot ready!>\n')
+
+        type = discord.ActivityType
+        activ = discord.Activity(name= f"!help", type= type.watching)
+        await self.change_presence(status=discord.Status.online, activity=activ)
 
     async def on_command(self, ctx):
         try:
